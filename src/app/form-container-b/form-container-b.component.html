@@ -4,9 +4,7 @@
         <div class="row">
           <div *ngFor="let control of formStructure" class="col-3">
             <!-- Text, Textarea & Number -->
-            <div
-              class="mb-3"
-              *ngIf="['text', 'number', 'textarea'].includes(control.type)"
+            <div class="mb-3" *ngIf="['text', 'number', 'textarea'].includes(control.type)"
             >
               <label for="exampleFormControlInput1" class="form-label">
                 {{ control.label }}
@@ -86,6 +84,7 @@
                 {{ getErrorMessage(control) }}
               </span>
             </div>
+
           </div>
         </div>
   

@@ -140,11 +140,11 @@
             {
                 "label": "Accessory Question 7 Number Input",
                 "desc": "Accessory Desc 7",
-                "type": "input",
+                "type": "text",
                 "maximum_cap": "NA",
                 "param_name": "accessory7",
                 "mandatory": true,
-                "max_length":"10",
+                "max_length":"20",
                 "enable":true,
                 "value": "",
                 "options": [],
@@ -188,7 +188,7 @@
             {
                 "label": "Accessory Question 13 Desc Input",
                 "desc": "Accessory Desc 13",
-                "type": "email",
+                "type": "number",
                 "maximum_cap": "NA",
                 "param_name": "accessory13",
                 "mandatory": true,
@@ -208,19 +208,6 @@
                       "message": "Please enter valid Phone number!"
                     }
                   ]
-            },
-            {
-                "label": "Accessory Question 9 Radio",
-                "desc": "Accessory Radio 9",
-                "type": "input",
-                "maximum_cap": "NA",
-                "param_name": "accessory9",
-                "mandatory": true,
-                "max_length":"NA",
-                "enable":true,
-                "value": "",
-                "options": [],
-                "validations": []
             },
             {
                 "label": "Accessory Question 10 Radio",
