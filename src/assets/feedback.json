@@ -129,6 +129,126 @@
                 "enable":true
             }
         ]
+        },
+        {
+        "form_id":"3",
+        "form_type":"summary",
+        "form_title":"Lorem Epsum FormId3",
+        "form_location":"middle",
+        "form_icon":"form3.svg",
+        "form_details":[
+            {
+                "label": "Accessory Question 7 Number Input",
+                "desc": "Accessory Desc 7",
+                "type": "input",
+                "maximum_cap": "NA",
+                "param_name": "accessory7",
+                "mandatory": true,
+                "max_length":"10",
+                "enable":true,
+                "options": [],
+                "validations": [
+                    {
+                      "name": "required",
+                      "validator": "required",
+                      "message": "Name is required"
+                    },
+                    {
+                      "name": "pattern",
+                      "validator": "^[a-zA-Z\\-\\']+$",
+                      "message": "Please enter valid name!"
+                    }
+                  ]
+            },
+            {
+                "label": "Accessory Question 8 Desc Input",
+                "desc": "Accessory Desc 8",
+                "type": "email",
+                "maximum_cap": "NA",
+                "param_name": "accessory8",
+                "mandatory": true,
+                "max_length":"50",
+                "enable":true,
+                "options": [],
+                "validations": [
+                    {
+                      "name": "required",
+                      "validator": "required",
+                      "message": "Email Id is required"
+                    },
+                    {
+                      "name": "pattern",
+                      "validator": "^([_a-zA-Z0-9]+(\\.[_a-zA-Z0-9]+)*@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*(\\.[a-zA-Z]{2,5}))",
+                      "message": "Please enter valid email!"
+                    }
+                  ]
+            },
+            {
+                "label": "Accessory Question 13 Desc Input",
+                "desc": "Accessory Desc 13",
+                "type": "email",
+                "maximum_cap": "NA",
+                "param_name": "accessory13",
+                "mandatory": true,
+                "max_length":"10",
+                "enable":true,
+                "options": [],
+                "validations": [
+                    {
+                      "name": "required",
+                      "validator": "required",
+                      "message": "Phone Number is required"
+                    },
+                    {
+                      "name": "pattern",
+                      "validator": "^(?:(?:\\+|0{0,2})91(\\s*[\\-]\\s*)?|[0]?)?[6789]\\d{9}$",
+                      "message": "Please enter valid Phone number!"
+                    }
+                  ]
+            },
+            {
+                "label": "Accessory Question 9 Radio",
+                "desc": "Accessory Radio 9",
+                "type": "input",
+                "maximum_cap": "NA",
+                "param_name": "accessory9",
+                "mandatory": true,
+                "reg_ex":"NA",
+                "max_length":"NA",
+                "enable":true,
+                "options": []
+            },
+            {
+                "label": "Accessory Question 10 Checkbox",
+                "desc": "Accessory Checkbox 10",
+                "type": "radio",
+                "maximum_cap": "NA",
+                "param_name": "accessory10",
+                "mandatory": true,
+                "reg_ex":"NA",
+                "max_length":"5",
+                "enable":true,
+                "options": [
+                    { "label": "1", "value": "1" },
+                    { "label": "2", "value": "2" },
+                    { "label": "3", "value": "3" },
+                    { "label": "4", "value": "4" },
+                    { "label": "5", "value": "5" }
+                  ]
+            },
+            {
+                "label": "Accessory Question 11 Checkbox",
+                "desc": "Accessory Star 11",
+                "type": "checkbox",
+                "maximum_cap": "NA",
+                "param_name": "accessory11",
+                "mandatory": true,
+                "reg_ex":"NA",
+                "max_length":"NA",
+                "enable":true,
+                "options": []
+            }
+        ]
         }
     ]
  }
