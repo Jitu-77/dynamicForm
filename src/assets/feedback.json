@@ -146,6 +146,7 @@
                 "mandatory": true,
                 "max_length":"10",
                 "enable":true,
+                "value": "",
                 "options": [],
                 "validations": [
                     {
@@ -169,6 +170,7 @@
                 "mandatory": true,
                 "max_length":"50",
                 "enable":true,
+                "value": "",
                 "options": [],
                 "validations": [
                     {
@@ -192,6 +194,7 @@
                 "mandatory": true,
                 "max_length":"10",
                 "enable":true,
+                "value": "",
                 "options": [],
                 "validations": [
                     {
@@ -213,28 +216,30 @@
                 "maximum_cap": "NA",
                 "param_name": "accessory9",
                 "mandatory": true,
-                "reg_ex":"NA",
                 "max_length":"NA",
                 "enable":true,
-                "options": []
+                "value": "",
+                "options": [],
+                "validations": []
             },
             {
-                "label": "Accessory Question 10 Checkbox",
-                "desc": "Accessory Checkbox 10",
+                "label": "Accessory Question 10 Radio",
+                "desc": "Accessory Radio 10",
                 "type": "radio",
                 "maximum_cap": "NA",
                 "param_name": "accessory10",
                 "mandatory": true,
-                "reg_ex":"NA",
                 "max_length":"5",
                 "enable":true,
+                "value": "",
                 "options": [
                     { "label": "1", "value": "1" },
                     { "label": "2", "value": "2" },
                     { "label": "3", "value": "3" },
                     { "label": "4", "value": "4" },
                     { "label": "5", "value": "5" }
-                  ]
+                  ],
+                "validations": []
             },
             {
                 "label": "Accessory Question 11 Checkbox",
@@ -243,10 +248,11 @@
                 "maximum_cap": "NA",
                 "param_name": "accessory11",
                 "mandatory": true,
-                "reg_ex":"NA",
                 "max_length":"NA",
                 "enable":true,
-                "options": []
+                "options": [],
+                "validations": [],
+                "value": ""
             }
         ]
         }

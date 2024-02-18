@@ -14,6 +14,7 @@ export class FormContainerBComponent {
 
   constructor(private fb: FormBuilder) {
     let formGroup: Record<string, any> = {};
+    console.log(this.formStructure)
     this.formStructure.forEach((control) => {
       console.log(control)
       let controlValidators: Validators[] = [];
@@ -32,9 +33,6 @@ export class FormContainerBComponent {
             if(validation.name === 'pattern'){
               controlValidators.push(Validators.pattern(validation?.validator))
             }
-            // if (validation.validator === 'email')
-            //   controlValidators.push(Validators.email);
-            // Add more built-in validators as needed
           }
         );
       }
@@ -42,10 +40,9 @@ export class FormContainerBComponent {
       formGroup[control.name] = [control.value || '', controlValidators];
     });
 
+    console.log(formGroup)
     this.dynamicForm = this.fb.group(formGroup);
     console.log(this.dynamicForm)
-
-
   }
 
   getErrorMessage(control: any) {
