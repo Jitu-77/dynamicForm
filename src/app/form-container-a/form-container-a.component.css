@@ -1,0 +1,12 @@
+.feedback-wrapper {
+    width: 90%;
+    max-width: 800px;
+    margin: 100px auto 20px;
+    background: #eee;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #aaa;
+}
+.error-red {
+    color: red;
+}

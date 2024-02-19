@@ -135,17 +135,17 @@
         {
         "form_id":"3",
         "form_type":"summary",
-        "form_title":"Lorem Epsum FormId3 Feedback Form",
+        "form_title":"Lorem Epsum FormId 3 Feedback Form",
         "form_description":"We value your feedback and use it to improve our events. Please fill out this form to share your experience.",
         "form_location":"middle",
         "form_icon":"form3.svg",
         "form_details":[
             {
-                "label": "Accessory Question 7 Number Input",
-                "desc": "Accessory Desc 7",
+                "label": "Name",
+                "desc": "Please enter your name",
                 "type": "text",
                 "maximum_cap": "NA",
-                "param_name": "accessory7",
+                "param_name": "name",
                 "mandatory": true,
                 "max_length":"20",
                 "enable":true,
@@ -165,11 +165,11 @@
                   ]
             },
             {
-                "label": "Accessory Question 8 Desc Input",
-                "desc": "Accessory Desc 8",
+                "label": "Email ID",
+                "desc": "Please enter email ID",
                 "type": "email",
                 "maximum_cap": "NA",
-                "param_name": "accessory8",
+                "param_name": "emailId",
                 "mandatory": true,
                 "max_length":"50",
                 "enable":true,
@@ -189,11 +189,11 @@
                   ]
             },
             {
-                "label": "Accessory Question 13 Desc Input",
-                "desc": "Accessory Desc 13",
+                "label": "Phone number",
+                "desc": "Please enter your number",
                 "type": "text",
                 "maximum_cap": "NA",
-                "param_name": "accessory13",
+                "param_name": "mobile_number",
                 "mandatory": true,
                 "max_length":"10",
                 "enable":true,
@@ -213,13 +213,13 @@
                   ]
             },
             {
-                "label": "Accessory Question 10 Radio",
-                "desc": "Accessory Radio 10",
+                "label": "Would you like to rate us on a scale of 5",
+                "desc": "Rating on a scale of 5",
                 "type": "radio",
                 "maximum_cap": "NA",
-                "param_name": "accessory10",
+                "param_name": "rating",
                 "mandatory": true,
-                "max_length":"5",
+                "max_length":"NA",
                 "enable":true,
                 "value": "",
                 "options": [
@@ -232,11 +232,11 @@
                 "validations": []
             },
             {
-                "label": "Accessory Question 11 Checkbox",
-                "desc": "Accessory Star 11",
+                "label": "Would you like to be notified about future products?",
+                "desc": "notification check box",
                 "type": "checkbox",
                 "maximum_cap": "NA",
-                "param_name": "accessory11",
+                "param_name": "notification_check",
                 "mandatory": true,
                 "max_length":"NA",
                 "enable":true,
