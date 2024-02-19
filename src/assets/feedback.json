@@ -9,6 +9,7 @@
         "form_description":"We value your feedback and use it to improve our events. Please fill out this form to share your experience.",
         "form_location":"middle",
         "form_icon":"form1.svg",
+        "form_background_color":"#e9eef8",
         "form_details":[
             {
                 "label": "Name",
@@ -150,6 +151,7 @@
         "form_description":"We value your feedback and use it to improve our events. Please fill out this form to share your experience.",
         "form_location":"middle",
         "form_icon":"form2.svg",
+        "form_background_color":"#e9f8ea",
         "form_details":[
             {
                 "label": "Name",
@@ -264,6 +266,7 @@
         "form_description":"We value your feedback and use it to improve our events. Please fill out this form to share your experience.",
         "form_location":"middle",
         "form_icon":"form3.svg",
+        "form_background_color":"#eee",
         "form_details":[
             {
                 "label": "Name",
