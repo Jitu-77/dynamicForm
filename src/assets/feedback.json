@@ -6,6 +6,7 @@
         "form_id":"1",
         "form_type":"accessory",
         "form_title":"Lorem Epsum FormId1",
+        "form_description":"We value your feedback and use it to improve our events. Please fill out this form to share your experience.",
         "form_location":"middle",
         "form_icon":"form1.svg",
         "form_details":[
@@ -70,6 +71,7 @@
         "form_id":"2",
         "form_type":"summary",
         "form_title":"Lorem Epsum FormId2",
+        "form_description":"We value your feedback and use it to improve our events. Please fill out this form to share your experience.",
         "form_location":"middle",
         "form_icon":"form2.svg",
         "form_details":[
@@ -133,7 +135,8 @@
         {
         "form_id":"3",
         "form_type":"summary",
-        "form_title":"Lorem Epsum FormId3",
+        "form_title":"Lorem Epsum FormId3 Feedback Form",
+        "form_description":"We value your feedback and use it to improve our events. Please fill out this form to share your experience.",
         "form_location":"middle",
         "form_icon":"form3.svg",
         "form_details":[
@@ -188,7 +191,7 @@
             {
                 "label": "Accessory Question 13 Desc Input",
                 "desc": "Accessory Desc 13",
-                "type": "number",
+                "type": "text",
                 "maximum_cap": "NA",
                 "param_name": "accessory13",
                 "mandatory": true,

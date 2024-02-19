@@ -59,7 +59,7 @@ export class FormContainerAComponent {
     });
   }
   getErrorMessage(control: any) {
-    const formControl = this.dynamicForm.get(control.name);
+    const formControl = this.dynamicForm.get(control.param_name);
 
     if (!formControl) {
       return '';
