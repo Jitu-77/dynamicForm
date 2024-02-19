@@ -45,13 +45,13 @@
           </div>
           <div class="d-flex flex-wrap">
             <div class="form-check form-check-inline " 
-            *ngFor="let option of control.options">  
+            *ngFor="let option of control.options ,let i= index">  
                 <input type="radio" 
-                id="inlineRadio1" 
+                [id]="control?.param_name+i" 
                 class="form-check-input"
                 [formControlName]="control.param_name"
                 [value]="option.value"/>
-                <label class="form-check-label" for="inlineRadio1">
+                <label class="form-check-label" [for]="control?.param_name+i">
                  {{ option.label }}</label>
             </div>
           </div>
