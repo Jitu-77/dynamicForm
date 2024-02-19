@@ -63,14 +63,14 @@
                 "desc": "Rating on a scale of 5",
                 "type": "radio",
                 "maximum_cap": "NA",
-                "param_name": "rating",
+                "param_name": "ratingsConfigurator",
                 "mandatory": true,
                 "max_length":"NA",
                 "enable":true,
                 "value": "",
                 "options": [
-                    { "label": "Yes", "value": "1" },
-                    { "label": "No", "value": "2" }
+                    { "label": "Yes", "value": "yes_3d" },
+                    { "label": "No", "value": "no_3d" }
                   ],
                 "validations": []
             },
@@ -92,14 +92,14 @@
                 "desc": "Rating on a scale of 5",
                 "type": "radio",
                 "maximum_cap": "NA",
-                "param_name": "rating",
+                "param_name": "ratingsAccSection",
                 "mandatory": true,
                 "max_length":"NA",
                 "enable":true,
                 "value": "",
                 "options": [
-                    { "label": "Yes", "value": "1" },
-                    { "label": "No", "value": "2" }
+                    { "label": "Yes", "value": "yes_acc_section" },
+                    { "label": "No", "value": "no_acc_section" }
                   ],
                 "validations": []
             },
@@ -108,7 +108,7 @@
                 "desc": "Rating on a scale of 5",
                 "type": "radio",
                 "maximum_cap": "NA",
-                "param_name": "rating",
+                "param_name": "ratingsSections",
                 "mandatory": true,
                 "max_length":"NA",
                 "enable":true,

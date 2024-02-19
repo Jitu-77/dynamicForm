@@ -47,11 +47,11 @@
             <div class="form-check form-check-inline " 
             *ngFor="let option of control.options ,let i= index">  
                 <input type="radio" 
-                [id]="control?.param_name+i" 
+                [id]="option?.label" 
                 class="form-check-input"
                 [formControlName]="control.param_name"
                 [value]="option.value"/>
-                <label class="form-check-label" [for]="control?.param_name+i">
+                <label class="form-check-label" [for]="option?.label">
                  {{ option.label }}</label>
             </div>
           </div>
@@ -71,8 +71,6 @@
           </div>
         </div>
       
-
-
       </div>
 
       <button type="submit" class="btn btn-primary btn-lg">Submit</button>
