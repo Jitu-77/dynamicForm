@@ -124,7 +124,7 @@
                 "validations": []
             },
             {
-                "label": "Suggestions",
+                "label": "Suggestions Edited",
                 "desc": "Please enter your suggestions",
                 "type": "text",
                 "maximum_cap": "NA",

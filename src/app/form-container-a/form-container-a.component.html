@@ -1,7 +1,7 @@
   <!--  -->
   <section class="feedback-wrapper"
   [ngStyle]="{
-    background: selectedFormData.form_background_color
+    background: selectedFormData?.form_background_color
   }">
 
   
@@ -10,14 +10,14 @@
 
       <div class="row mb-3">  
         <div class="col-md-12">  
-          <h2>{{selectedFormData.form_title}}</h2>
-          <div class="fs-6 fw-light">{{selectedFormData.form_description}}</div>
+          <h2>{{selectedFormData?.form_title}}</h2>
+          <div class="fs-6 fw-light">{{selectedFormData?.form_description}}</div>
         </div>
       </div>
 
       <div class="row mb-3" *ngFor="let control of formStructure">
 
-        <div class="col-md-6" *ngIf="['text','email','number', 'textarea'].includes(control.type)">  
+        <div class="col-md-6" *ngIf="['text','email','number', 'textarea'].includes(control?.type)">  
           <label for="exampleFormControlInput1" class="form-label">
             {{ control.label }}
           </label>
@@ -40,19 +40,19 @@
         </span>
         </div>
 
-        <div class="col-md-12" *ngIf="['radio'].includes(control.type)">
+        <div class="col-md-12" *ngIf="['radio'].includes(control?.type)">
           <div>
             <label for="exampleFormControlInput1" class="form-label">
-              {{ control.label }}
+              {{ control?.label }}
             </label>
           </div>
           <div class="d-flex flex-wrap">
             <div class="form-check form-check-inline " 
-            *ngFor="let option of control.options ,let i= index">  
+            *ngFor="let option of control?.options ,let i= index">  
                 <input type="radio" 
                 [id]="option?.label" 
                 class="form-check-input"
-                [formControlName]="control.param_name"
+                [formControlName]="control?.param_name"
                 [value]="option.value"/>
                 <label class="form-check-label" [for]="option?.label">
                  {{ option.label }}</label>
@@ -60,17 +60,17 @@
           </div>
         </div>
 
-        <div class="col-md-12" *ngIf="['checkbox'].includes(control.type)">
+        <div class="col-md-12" *ngIf="['checkbox'].includes(control?.type)">
           <div>
             <label for="inlineCheck1" class="form-label" style="margin-right: 5px;">
-              {{ control.label }}
+              {{ control?.label }}
             </label>
             <input type="checkbox" 
             name="rating_overall_experience" 
             id="inlineCheck1" 
             class="form-check-input"
-            [formControlName]="control.param_name"
-            [value]="control.value"/>
+            [formControlName]="control?.param_name"
+            [value]="control?.value"/>
           </div>
         </div>
       

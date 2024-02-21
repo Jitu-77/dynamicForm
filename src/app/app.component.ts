@@ -8,12 +8,15 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   constructor(private http: HttpClient) { }
   title = 'feedBackModule';
+  selectedFormId = 2
+  formData!: any
   getData() {
     return this.http.get('assets/feedback.json');
   }
   ngOnInit() {
     this.getData().subscribe(data => {
       console.log(data);
+      this.formData = data
       // Do something with the JSON data
     });
   }
