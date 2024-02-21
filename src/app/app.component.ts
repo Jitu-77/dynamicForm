@@ -20,4 +20,7 @@ export class AppComponent {
       // Do something with the JSON data
     });
   }
+  submitFormDetails(e:any){
+    console.log(e)
+  }
 }

@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-form-container-a',
@@ -14,6 +14,7 @@ export class FormContainerAComponent implements  OnChanges {
   @Input() formData! : any 
   dynamicForm: FormGroup = this.fb.group({});
   formStructure:any[] = []
+  @Output() submitFormDetails = new EventEmitter<any>(true);
   getData() {
     return this.http.get('assets/feedback.json');
   }
@@ -63,6 +64,7 @@ export class FormContainerAComponent implements  OnChanges {
       return;
     }
     console.log(this.dynamicForm.value);
+    this.submitFormDetails.emit(this.dynamicForm)
   }
   formControlWrapper(){
     console.log(this.selectedFormData)    
